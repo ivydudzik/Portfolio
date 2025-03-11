@@ -13,14 +13,14 @@
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
-    src: url('./fonts/Jost-Regular.ttf') format('ttf');
+    src: url('./fonts/Jost-Regular.ttf') format('woff');
 }
 
 @font-face {
     font-family: 'Lora';
     font-style: normal;
     font-weight: 400;
-    src: url('./fonts/Lora-Regular.ttf') format('ttf');
+    src: url('./fonts/Lora-Regular.ttf') format('woff');
 }
 
 * {
@@ -127,8 +127,13 @@ img {
 /* ----- Headlines and Paragraphs ----- */
 /* --------------------------------------- */
 
-h1,
+h1 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+}
+
 h2,
+
 h3 {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
@@ -423,8 +428,10 @@ body:not(.user-is-tabbing) a:focus {
 
 .header__text {
     position: absolute;
+    font-family: 'Lora', serif;
     top: 50%;
     transform: translateY(-50%);
+    backdrop-filter: blur(5px);
 }
 
 .header__text p {
