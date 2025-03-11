@@ -41,11 +41,30 @@
     --line-height-normal: 1.7;
     --line-height-small: 1.2;
 
-    --black: #000;
-    --pink: #ff3258;
-    --white: #f0e9f2;
-    --white-1: #e5e5e6da;
+    --black: #1a1d1c;
+    --pink: #A12559;
+    --white: #e879af;
+    --white-1: #fff9f9;
 
+    /* 
+    Saturated:
+    #3B0944 
+    #5F1854
+    #A12559
+    #F1BBD5 --> #e879af
+
+    Less Saturated:
+    #1A1A1D --> #1a1d1c
+    #3B1C32
+    #6A1E55
+    #A64D79
+
+    White (pink):
+    #fff9f9
+
+    Black (green):
+    #1a1d1c
+    */
 
     --container-max-width: 1180px;
     --container-normal-width: 800px;
@@ -431,7 +450,7 @@ body:not(.user-is-tabbing) a:focus {
     font-family: 'Lora', serif;
     top: 50%;
     transform: translateY(-50%);
-    backdrop-filter: blur(5px);
+    backdrop-filter: drop-shadow(4px 4px 10px rgb(0, 0, 0));
 }
 
 .header__text p {
