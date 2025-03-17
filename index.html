@@ -34,8 +34,7 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Experience</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
           </li>
@@ -53,23 +52,149 @@
         </h1>
         <!-- Put a small paragraph about yourself -->
         <p>Programmer, Technical Artist, Game Producer</p>
-        <a href="mailto:ivydudzik@gmail.com" class="btn btn--pink">Get in touch</a>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
       </div>
     </div>
   </header>
 
   <main role="main">
-    <!-- UNDER CONSTRUCTION -->
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
-    <h1 class="under__construction">[ UNDER CONSTRUCTION ]</h1>
-    <br>
-    <br>
+    <!-- ***** Projects ***** -->
+
+    <section class="work" id="projects">
+      <div class="row">
+        <h2>My Projects</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Malisense</h3>
+              <p>
+                <i>A delve into the deep and dark.</i> This project was the collaboration of a team of more than 50
+                students over the course of one year.
+              </p>
+              <ul class="work__list">
+                Roles:
+                <li>Programming Department Producer</li>
+                <li>Dialogue & Story Programmer</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://game-design-art-collab.itch.io/malisense" target="_blank" class="link__text">
+                  Play Game <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/malisense_thumbnail.png" class="work__image" alt="Malisense Title Image" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3></h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                eius.
+              </p>
+              <ul class="work__list">
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Node</li>
+                <li>MongoDB</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Read My Full Writeup <span>&rarr;</span>
+                </a>
+                <a href="#">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Notificator</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                eius.
+              </p>
+              <ul class="work__list">
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Node</li>
+                <li>MongoDB</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="#">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Info about Ivy -->
+            <p>
+              Hi! I'm Ivy! I'm passionate about people and problem-solving, and I'm currently studying Computer Science
+              and Game
+              Design at the University of California Santa Cruz. I spend much of my time working with the <a
+                href="https://www.linkedin.com/company/ucsc-gda" class="link">Game Design and Art Collaboration</a>, a
+              club on campus where I currently serve as Studio Coordinator and Vice President. If you love art,
+              engineering, and storytelling, we will undoubtedly get along.
+            </p>
+            <!-- Could switch this to be a link to my resume -->
+            <a href="https://www.linkedin.com/in/ivy-dudzik/" class="btn">My LinkedIn</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Ivy presenting at Unity Night with GDA -->
+            <img class="about__photo" src="./images/ivypresents.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          If you are looking for an eager, communicative, and technical team member (or just want to learn more about
+          what I do!) don't hesitate to reach out.
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:ivydudzik@gmail.com" class="btn">ivydudzik@gmail.com</a>
+      </div>
+    </div>
+  </section>
 
   <!-- ***** Footer ***** -->
 
@@ -97,8 +222,8 @@
 
       <!-- Copyright Ivy Dudzik & Credit Nisar! -->
       <p>
-        &copy; 2025 - Ivy Dudzik - Site adapted from <a href="https://github.com/nisarhassan12/portfolio-template"
-          class="link">template</a> by <a href="https://nisar.dev" class="link">Nisar</a>.
+        &copy; 2025 - Ivy Dudzik - Site adapted from <a href="https://nisar.dev" class="link">Nisar</a>'s <a
+          href="https://github.com/nisarhassan12/portfolio-template" class="link">template</a> by Ivy.
       </p>
     </div>
   </footer>

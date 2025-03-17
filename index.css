@@ -43,7 +43,8 @@
 
     --black: #1a1d1c;
     --pink: #A12559;
-    --white: #e879af;
+    --pink-1: #e879af;
+    --white: #ffffff;
     --white-1: #fff9f9;
 
     /* 
@@ -241,6 +242,10 @@ body:not(.user-is-tabbing) a:focus {
     outline: none;
 }
 
+.link {
+    color: var(--pink-1);
+}
+
 .link:hover {
     color: var(--pink);
 }
@@ -308,7 +313,7 @@ body:not(.user-is-tabbing) a:focus {
     top: 0;
     left: 0;
     right: 100%;
-    background: var(--white);
+    background: var(--pink-1);
     height: 100%;
     z-index: -1;
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
@@ -417,7 +422,7 @@ body:not(.user-is-tabbing) a:focus {
     right: 100%;
     display: inline-block;
     height: 1rem;
-    background: var(--white);
+    background: var(--pink-1);
     transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
 
