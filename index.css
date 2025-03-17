@@ -46,6 +46,7 @@
     --pink-1: #e879af;
     --white: #ffffff;
     --white-1: #fff9f9;
+    --white-2: #fbe5f5;
 
     /* 
     Saturated:
@@ -159,6 +160,13 @@ h3 {
     font-weight: 400;
     line-height: var(--line-height-small);
     color: var(--white);
+}
+
+h3 small {
+    display: block;
+    font-size: 65%;
+    opacity: 75%;
+    color: var(--pink-1);
 }
 
 .heading-primary {
@@ -537,6 +545,11 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__image-box {
     margin-bottom: var(--gutter-normal);
+
+}
+
+.work__image {
+    border-radius: 1%;
 }
 
 @media(min-width: 901px) {
@@ -549,32 +562,6 @@ body:not(.user-is-tabbing) a:focus {
 @media(max-width: 900px) {
     .work__code {
         height: 4rem;
-    }
-}
-
-/* --------------------------------------- */
-/* ----- Clients ----- */
-/* --------------------------------------- */
-
-.client__logos {
-    display: flex;
-    justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
-}
-
-.client__logo {
-    height: 6.5rem;
-    max-width: 18rem;
-}
-
-@media(max-width: 1240px) {
-    .client__logos {
-        overflow-x: scroll;
-        padding: var(--gutter-normal);
-    }
-
-    .client__logo:not(:last-of-type) {
-        margin-right: var(--gutter-medium);
     }
 }
 
@@ -597,6 +584,10 @@ body:not(.user-is-tabbing) a:focus {
 
 .about__photo-container {
     margin-bottom: var(--gutter-normal);
+}
+
+.about__photo {
+    border-radius: 1%;
 }
 
 @media(min-width: 901px) {
